@@ -13,26 +13,22 @@
     body {
       background-color: #f2f2f2;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 100vh;
       padding: 20px;
+      text-align: center;
+
     }
 
-    .img-container {
-      
+    img {
       width: 100%;
       max-width: 400px;
     }
 
-    .img-container img {
-      margin: auto;
-      width: 100%;       /* ocupa toda a largura disponível */
-      height: auto;      /* mantém a proporção original */
-      display: block;
+    .container img {
+      margin: 0 auto;
+      width: 100%; 
+      max-width: 400px;     
+      height: auto;     
+
     }
 
     p {
@@ -43,7 +39,7 @@
   </style>
 </head>
 <body>
-  <div class="img-container">
+  <div class="container">
     <img src="manutencao-mix123.png" alt="Site em manutenção">
   </div>
   <p>Volte novamente em breve. Obrigado!</p>
