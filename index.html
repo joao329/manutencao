@@ -4,29 +4,43 @@
   <meta charset="UTF-8">
   <title>Site em Manutenção</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
     body {
       background-color: #f2f2f2;
-      text-align: center;
       font-family: Arial, sans-serif;
-      padding-top: 50px;
-      padding:100px 10px 0 10px;
+      text-align: center;
+      overflow: hidden;
     }
+
     img {
-      width:100%;
-      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* ou 'cover', se quiser preencher mesmo que corte */
     }
-    h1 {
-      color: #333;
-      margin-top: 18px;
-    }
+
     p {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
       color: #666;
       font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      padding: 10px 0;
     }
   </style>
 </head>
 <body>
-  <img src="manutencao-mix123.png">
-  <p>Volte novamente em breve. Obrigado !</p>
+  <img src="manutencao-mix123.png" alt="Site em manutenção">
+  <p>Volte novamente em breve. Obrigado!</p>
 </body>
 </html>
