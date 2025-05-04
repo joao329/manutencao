@@ -28,15 +28,22 @@
       display: block;
     }
 
+    .img-container {
+      width: 100%;
+      max-width: 400px;
+    }
+
     p {
-      margin: 20px 0 0 0; /* exatamente 20px acima do parágrafo */
+      margin: 20px 0 0 0; /* exatamente 20px abaixo da imagem */
       color: #666;
       font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <img src="manutencao-mix123.png" alt="Site em manutenção">
+  <div class="img-container">
+    <img src="manutencao-mix123.png" alt="Site em manutenção">
+  </div>
   <p>Volte novamente em breve. Obrigado!</p>
 </body>
 </html>
