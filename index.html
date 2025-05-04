@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Site em Manutenção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       background-color: #f2f2f2;
       font-family: Arial, sans-serif;
-      padding: 20px;
       text-align: center;
-
+      padding: 20px;
     }
 
-    img {
+    .container {
       width: 100%;
       max-width: 400px;
+      margin: 0 auto;
     }
 
     .container img {
-      margin: 0 auto;
-      width: 100%; 
-      max-width: 400px;     
-      height: auto;     
-
+      width: 100%;       /* Ocupa toda a largura da tela até 400px */
+      height: auto;      /* Mantém a proporção */
+      display: block;
     }
 
     p {
-      margin-top: 20px; /* exatamente 20px abaixo da imagem */
+      margin-top: 20px;  /* Exatamente 20px abaixo da imagem */
       color: #666;
       font-size: 16px;
     }
